@@ -7,13 +7,23 @@ import Z from "@/components/hero/Z";
 
 export default function Home() {
   return (
-    <main className="w-full h-full flex flex-col relative">
-      <Nav />
-      <SectionContent />
-      <Cli />
-      <Heatmap />
-      <Z />
-      <Victor />
+    <main>
+
+      {/* HeroSection */}
+      <section className="w-full h-screen flex flex-col relative">
+        <Nav />
+        <SectionContent />
+        <Cli />
+        <Heatmap />
+        <Z />
+        <Victor />
+      </section>
+
+      {/* Story Section */}
+      <section className="w-full h-screen">
+
+      </section>
+
     </main>
   )
 }

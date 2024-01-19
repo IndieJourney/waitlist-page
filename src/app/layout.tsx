@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='font-nunito w-full h-screen overflow-hidden'>{children}</body>
+      <body className='font-nunito w-full h-screen overflow-x-hidden'>{children}</body>
     </html>
   )
 }
