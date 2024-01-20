@@ -25,7 +25,7 @@ export default function TheStory(){
 function StoryTellingIcon(){
     const isScrolled = useIsScrolledHero();
     return(
-        <motion.div animate={isScrolled ? {rotate : -20 , opacity : 1} : {rotate : 150, opacity : 0}} initial={isScrolled ? {rotate : 150, opacity : 0} : {rotate : -20, opacity : 1}} transition={{ type: "spring" , stiffness: 200, damping: 20, delay : 0 }} className="absolute sm:-top-9 sm:-right-8 -top-7 -right-6 -rotate-12">
+        <motion.div animate={isScrolled ? {rotate : -20 , opacity : 1} : {rotate : 150, opacity : 0}} initial={isScrolled ? {rotate : 150, opacity : 0} : {rotate : -20, opacity : 1}} transition={{ type: "spring" , stiffness: 200, damping: 20, delay : 0.1 }} className="absolute sm:-top-9 sm:-right-8 -top-7 -right-6 -rotate-12">
             <div className="relative">
                 <Image
                     src="/images/my-profile.png"
