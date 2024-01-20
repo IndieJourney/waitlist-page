@@ -1,10 +1,10 @@
 "use client"
-import { useIsScrolled } from "@/hooks/Scroll";
+import { useIsScrolledHero } from "@/hooks/Scroll";
 import { motion } from "framer-motion";
 import Image from "next/image"
 
 export default function Cli(){
-    const isScrolled = useIsScrolled();
+    const isScrolled = useIsScrolledHero();
     return(
         <motion.div animate={isScrolled ? {x : 500 , rotate : -20} : {x : 0 , rotate : -20}} initial={isScrolled ? {x : 0} : {x : 500 }} transition={{ type: "spring" , stiffness: 80, damping: 12 }} className="fixed top-11 lg:-right-28 md:-right-36 -right-36 -rotate-12">
             <div className="relative">

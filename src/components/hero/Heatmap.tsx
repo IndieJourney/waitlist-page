@@ -1,10 +1,10 @@
 "use client"
-import { useIsScrolled } from "@/hooks/Scroll";
+import { useIsScrolledHero } from "@/hooks/Scroll";
 import { motion } from "framer-motion";
 import Image from "next/image"
 
 export default function Heatmap(){
-    const isScrolled = useIsScrolled();
+    const isScrolled = useIsScrolledHero();
     return (
         <motion.div className="fixed top-32 lg:left-0 md:-left-10 -left-14 -rotate-12" animate={isScrolled ? { x : -280, rotate : -20 } : { x : 0, rotate : -20 }} initial={isScrolled ? {x : 0} : {x : -280}} transition={{ type: "spring", stiffness: 80, damping: 12 }}>
             <div>

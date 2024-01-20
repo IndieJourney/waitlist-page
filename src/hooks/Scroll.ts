@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { useScroll, useMotionValueEvent } from "framer-motion";
 
-function useIsScrolled(){
+function useIsScrolledHero(){
     const [isScrolled , setScrolled] = useState<boolean>(false);
     const { scrollY } = useScroll();
     useMotionValueEvent(scrollY,"change", (latest) => {
-        if(latest >= 100){
+        if(latest >= 80){
             setScrolled(true);
         }
-        if(latest < 100){
+        if(latest < 80){
             setScrolled(false);
         }
         console.log(isScrolled);
@@ -17,5 +17,5 @@ function useIsScrolled(){
 }
 
 export {
-    useIsScrolled
+    useIsScrolledHero
 }
