@@ -4,8 +4,12 @@ import Heatmap from "@/components/hero/Heatmap";
 import Nav from "@/components/hero/Nav";
 import Victor from "@/components/hero/Victor";
 import Z from "@/components/hero/Z";
+import MyFoundingPartner from "@/components/story/FoundingPartner";
+import NotNewSocial from "@/components/story/NotNewSocial";
 import StoryContainer from "@/components/story/StoryContainer";
 import TheStory from "@/components/story/TheStory";
+import WeUse from "@/components/story/WeUse";
+import WhatItIs from "@/components/story/WhatIsIt";
 
 export default function Home() {
   return (
@@ -25,6 +29,10 @@ export default function Home() {
       <section className="w-full min-h-screen">
         <StoryContainer>
           <TheStory />
+          <NotNewSocial />
+          <WhatItIs />
+          <WeUse />
+          <MyFoundingPartner />
         </StoryContainer>
       </section>
 
