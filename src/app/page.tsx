@@ -22,7 +22,7 @@ export default function Home() {
       </section>
 
       {/* Story Section */}
-      <section className="w-full min-h-screen">
+      <section className="w-full min-h-screen overflow-y-hidden">
         <StoryContainer>
           <TheStory />
         </StoryContainer>
