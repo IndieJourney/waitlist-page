@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/Footer";
 import Cli from "@/components/hero/Cli";
 import SectionContent from "@/components/hero/Content";
 import Heatmap from "@/components/hero/Heatmap";
@@ -34,6 +35,8 @@ export default function Home() {
           <WeUse />
           <MyFoundingPartner />
         </StoryContainer>
+        <div className="pt-20"></div>
+        <Footer />
       </section>
 
     </main>

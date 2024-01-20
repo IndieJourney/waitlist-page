@@ -14,6 +14,16 @@ export default function MyFoundingPartner(){
                 </div>
             </div>
             <p className="text-[#76777B] pt-3">I simply want a dedicated place where I can share my progress and devlogs on the project I do, and connect with like-minded people. Excited to try our product myself.</p>
+            <div className="absolute sm:-top-9 sm:-right-8 -top-7 -right-6 -rotate-12">
+                <Image
+                    src="/images/Victor.jpg"
+                    alt="The Logo"
+                    width="0"
+                    height="0"
+                    sizes="100vw"
+                    className="h-auto sm:w-14 w-12 rounded-full"
+                />
+            </div>
         </div>
     )
 }
