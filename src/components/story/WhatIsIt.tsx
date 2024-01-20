@@ -13,7 +13,7 @@ function WhatIsIt(){
     return (
         <div className="h-auto w-72 filter drop-shadow-md backdrop-blur-2 translate-y-1 rounded-xl border border-[#F0F0F0] bg-white p-7 mx-auto">
             <div className="flex flex-row space-x-2">
-                <h1 className="font-bold text-lg">Hi, here is the story!</h1>
+                <h1 className="font-bold text-lg">So, what is it?</h1>
                 <div className='relative h-7 w-7'>
                     <Image
                     src="/images/thinking_face_3d.png"
