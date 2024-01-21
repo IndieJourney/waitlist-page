@@ -11,7 +11,6 @@ function useIsScrolledHero(){
         if(latest < 80){
             setScrolled(false);
         }
-        console.log(isScrolled);
     })
     return isScrolled
 }

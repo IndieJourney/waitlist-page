@@ -27,7 +27,7 @@ export default function Home() {
       </section>
 
       {/* Story Section */}
-      <section className="w-full min-h-screen">
+      <section className="w-full h-full">
         <StoryContainer>
           <TheStory />
           <NotNewSocial />
