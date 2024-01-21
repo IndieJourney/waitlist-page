@@ -15,9 +15,9 @@ export default function Nav(){
                     <h1 className="text-xl font-extrabold">Indie Journey</h1>
                 </div>
                 <div className="bg-[#F7F7F7] px-4 py-2 rounded-full flex flex-row items-center space-x-3">
-                    <div className="relative flex h-3 w-3 -mt-[0.1px]">
+                    <div className="relative flex sm:h-3 sm:w-3 h-[10px] w-[10px] sm:-mt-[0.1px] -mt-[0.2px]">
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#2CE03E] opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-3 w-3 bg-[#2CE03E]"></span>
+                        <span className="relative inline-flex rounded-full sm:h-3 sm:w-3 h-[10px] w-[10px] bg-[#2CE03E]"></span>
                     </div>
                     <h1 className="text-[#7A899C] font-bold">
                         Development
