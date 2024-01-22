@@ -11,6 +11,7 @@ import StoryContainer from "@/components/story/StoryContainer";
 import TheStory from "@/components/story/TheStory";
 import WeUse from "@/components/story/WeUse";
 import WhatItIs from "@/components/story/WhatIsIt";
+import { Toaster } from 'react-hot-toast';
 
 export default function Home() {
   return (
@@ -39,6 +40,10 @@ export default function Home() {
         <Footer />
       </section>
 
+      <Toaster
+        position="top-center"
+        reverseOrder={false}
+      />
     </main>
   )
 }
