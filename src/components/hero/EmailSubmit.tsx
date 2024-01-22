@@ -19,7 +19,6 @@ export default function EmailSubmit(){
     };
 
     const makeValidation = async (FormData : FormData) => {
-        setLoading(true);
         const newEmail = FormData.get("email");
         const result = EmailSchema.safeParse({email : newEmail});
         if(!result.success){ 
@@ -52,7 +51,7 @@ export default function EmailSubmit(){
     }
 
     return (
-        <form action={makeValidation} className="sm:w-96 w-8/12 mx-auto mt-10 border border-[#D0D7DE] h-11 rounded-xl flex flex-col justify-center">
+        <form onSubmit={()=>{setLoading(true);}} action={makeValidation} className="sm:w-96 w-8/12 mx-auto mt-10 border border-[#D0D7DE] h-11 rounded-xl flex flex-col justify-center">
             <div className="flex flex-row h-auto w-[97%] mx-auto">
                 <motion.input key={animate} initial={{x : -6}} animate={{x : 0}} transition={{ type : "spring" , stiffness: 80, damping: 12  }} type="email" name="email" className="focus:outline-none h-full w-full placeholder-[#76777B] font-semibold px-2 rounded-full" placeholder="Enter your email"/>
                 <Button disabled={loading} type="submit" className={`bg-[#6867F9] h-8 w-52 rounded-lg text-white focus:outline-none ${loading ? "opacity-75" : ""}`}>
