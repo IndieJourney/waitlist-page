@@ -51,9 +51,9 @@ export default function Footer(){
                                 <li>
                                     <Link href={"https://twitter.com/_omegaphoton"} target="_blank">@_omegaphoton</Link>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link href={"https://twitter.com/victorevolves"} target="_blank">@victorevolves</Link>
-                                </li>
+                                </li> */}
                             </div>
                         </div>
 

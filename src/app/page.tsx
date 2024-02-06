@@ -5,7 +5,7 @@ import Heatmap from "@/components/hero/Heatmap";
 import Nav from "@/components/hero/Nav";
 import Victor from "@/components/hero/Victor";
 import Z from "@/components/hero/Z";
-import MyFoundingPartner from "@/components/story/FoundingPartner";
+import MyFriendSaid from "@/components/story/MyFriendSaid";
 import NotNewSocial from "@/components/story/NotNewSocial";
 import StoryContainer from "@/components/story/StoryContainer";
 import TheStory from "@/components/story/TheStory";
@@ -34,7 +34,7 @@ export default function Home() {
           <NotNewSocial />
           <WhatItIs />
           <WeUse />
-          <MyFoundingPartner />
+          <MyFriendSaid />
         </StoryContainer>
         <div className="pt-20"></div>
         <Footer />
